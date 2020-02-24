@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prepand</title>
+</head>
+<body>
+	<ul>
+		<li>hey</li>
+		<li>hello</li>
+		<li>bye</li>
+	</ul>
+	<button id="abc"> click me</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#abc").click(function(){
+			$("ul,li").prepend("sure");
+		});
+	});
+</script>
+</html>

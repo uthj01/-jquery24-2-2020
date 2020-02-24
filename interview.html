@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>interview</title>
+</head>
+<style>
+	.buttoncontainer{
+		width: 75%;
+	}
+.buttoncontainer  > .button {
+	width: 30%;
+	height: 48%;
+	font-size: 24px;
+}
+</style>
+<body>
+	<div id="btns" class="buttoncontainer">
+<button id="btns1" class="button">1</button>
+<button id="btns2" class="button">2</button>
+<button id="btns3" class="button">3</button><br>
+<button id="btns4" class="button">4</button>
+<button id="btns5" class="button">5</button>
+<button id="btns6" class="button">6</button><br>
+<button id="btns7" class="button">7</button>
+<button id="btns8" class="button">8</button>
+<button id="btns9" class="button">9</button>
+</div>
+<script>
+	btns5.onclick=function(){      
+		var variableNum=btns1.innerHTML;
+		btns1.innerHTML=btns4.innerHTML;btns4.innerHTML=btns7.innerHTML;
+
+		btns7.innerHTML=btns8.innerHTML;btns8.innerHTML=btns9.innerHTML;
+
+		btns9.innerHTML=btns6.innerHTML;btns6.innerHTML=btns3.innerHTML;
+
+		btns3.innerHTML=btns2.innerHTML;btns2.innerHTML=variableNum;
+		
+	};
+
+	btns6.onclick=function(){
+		var variableNum=btns1.innerHTML;
+		btns1.innerHTML=btns4.innerHTML;btns4.innerHTML=btns7.innerHTML;
+
+		btns7.innerHTML=btns8.innerHTML;btns8.innerHTML=btns9.innerHTML;
+
+		btns9.innerHTML=btns6.innerHTML;btns6.innerHTML=btns3.innerHTML;
+
+		btns3.innerHTML=btns2.innerHTML;btns2.innerHTML=variableNum;
+		
+	};
+</script>
+
+
+</body>
+</html>

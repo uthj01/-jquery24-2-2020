@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery4</title>
+</head>
+<body>
+	<p>hello team</p>
+	<button id="abc">clickme</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+				$("#abc").click(function(){
+
+		$("p").css("background-color","red").
+		slideUp(2000).slideDown(2000);
+
+		});
+	});
+	</script>
+</html>

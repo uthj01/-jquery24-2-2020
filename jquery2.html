@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery2</title>
+</head>
+<body>
+	<p> hello team</p>
+	<p id="abc">learn jquery</p>
+	<button>click me</button>
+
+	
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#abc").hide();
+		});
+	});
+</script>
+</html>
